@@ -1,0 +1,54 @@
+*, body {
+  /* Reset html */
+  margin: 0;
+  padding: 0;
+  /* set font and sizing */
+  box-sizing: border-box;
+  font-family: 'Alatsi';
+  color: white; }
+
+/* css for body */
+body {
+  background: #1A1C2D;
+  width: 100vw;
+  padding: 0 50px;
+  overflow-x: hidden;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none; }
+
+#background_container {
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center; }
+  #background_container video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto; }
+
+main {
+  height: 100vh;
+  width: calc(100vw - 100px); }
+  main#home {
+    display: flex; }
+    main#home nav {
+      position: absolute;
+      margin: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+model-viewer {
+  width: 50vw;
+  height: 50vh;
+  margin: auto; }
